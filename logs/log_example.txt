@@ -1,0 +1,35 @@
+*******************************************************
+*                                                     *
+*       Project Name: CPP-Framework                   *
+*       Created By: Sebastian Cantini Budden          *
+*                                                     *
+*******************************************************
+Timestamp: 11:17:57 | INFO | Log | Start of log
+Timestamp: 11:17:57 | INFO | Init | Executing Read Config
+Timestamp: 11:17:57 | INFO | Read Config | Starting process
+Timestamp: 11:17:57 | INFO | Read Config | Opening config file
+Timestamp: 11:17:57 | INFO | Read Config | Validating config file opened successfuly
+Timestamp: 11:17:57 | INFO | Read Config | Reading config file...
+Timestamp: 11:17:57 | INFO | Read Config | Reading config file... DONE
+Timestamp: 11:17:57 | INFO | Read Config | Closing config file
+Timestamp: 11:17:57 | INFO | Read Config | Finished process
+Timestamp: 11:17:57 | INFO | Init | Read Config finished successfully
+Timestamp: 11:17:57 | INFO | Init | Verifying if Clean Environment is configured to execute = NO
+Timestamp: 11:17:57 | WARN | Init | Clean Environment is not configured for execution
+Timestamp: 11:17:57 | INFO | Process | Starting process
+Timestamp: 11:17:57 | INFO | Process | Verifying if Subprocess Template is configured to execute = YES
+Timestamp: 11:17:57 | INFO | Process | Subprocess Template is configured for execution
+Timestamp: 11:17:57 | INFO | Subprocess Template | Starting process
+Timestamp: 11:17:57 | INFO | Subprocess Template | Finished process
+Timestamp: 11:17:57 | INFO | Process | Subprocess Template finished successfully
+Timestamp: 11:17:57 | INFO | Process | Verifying if Subprocess Template 2 is configured to execute = NO
+Timestamp: 11:17:57 | WARN | Process | Subprocess Template 2 is not configured for execution
+Timestamp: 11:17:57 | INFO | Process | Verifying if Subprocess Template 3 is configured to execute = YES
+Timestamp: 11:17:57 | INFO | Process | Subprocess Template 3 is configured for execution
+Timestamp: 11:17:57 | INFO | Subprocess3 | Starting process
+Timestamp: 11:17:57 | INFO | Subprocess3 | Finished process
+Timestamp: 11:17:57 | INFO | Process | Subprocess Template 3 finished successfully
+Timestamp: 11:17:57 | INFO | Process | Finished process
+Timestamp: 11:17:57 | INFO | End | Verifying if Clean Environment is configured to execute = NO
+Timestamp: 11:17:57 | WARN | End | Clean Environment is not configured for execution
+Timestamp: 11:17:57 | INFO | Log | End of log

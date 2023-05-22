@@ -1,0 +1,17 @@
+--Paths
+path_input,input
+path_output,output
+path_tmp,tmp
+path_std,std
+--Process
+process_name,CPP-Framework
+--Processes
+execute_cleanenvironment_init,NO
+execute_subprocess,YES
+execute_subprocess2,NO
+execute_subprocess3,YES
+execute_cleanenvironment_end,NO
+--InputFiles
+--InputMappings
+--OutputFiles
+--OutputMappings
