@@ -23,28 +23,28 @@ void init() {
         subprocess_name = "Read Config";
         log(INFO, process_name, "Executing Read Config");
         readConfig(PATH_CONFIG);
-        if(error){
+        if(error) {
             log(ERROR, process_name, subprocess_name + " couldn't finish successfully");
             return;
         }
-        else{
+        else {
             log(INFO, process_name, subprocess_name + " finished successfully");
         }
         
         //Clean Environment
         subprocess_name = "Clean Environment";
         log(INFO, process_name, "Verifying if " + subprocess_name + " is configured to execute = " + config["execute_cleanenvironment_init"]);
-        if(config["execute_cleanenvironment_init"] == "YES"){
+        if(config["execute_cleanenvironment_init"] == "YES") {
             cleanEnvironment();
-            if(error){
+            if(error) {
                 log(ERROR, process_name, subprocess_name + " couldn't finish properly");
             }
         }
-        else{
+        else {
             log(WARN, process_name, subprocess_name + " is not configured for execution");
         }
     }
-    catch(...){
+    catch(...) {
         error = true;
     }
 }
@@ -57,17 +57,17 @@ void end() {
     error = false;
     subprocess_name = "Clean Environment";
     log(INFO, process_name, "Verifying if " + subprocess_name + " is configured to execute = " + config["execute_cleanenvironment_end"]);
-    if(config["execute_cleanenvironment_end"] == "YES"){
+    if(config["execute_cleanenvironment_end"] == "YES") {
         log(INFO, process_name, subprocess_name + " is configured for execution");
         cleanEnvironment();
-        if(error){
+        if(error) {
             log(ERROR, process_name, subprocess_name + " couldn't finish successfully");
         }
-        else{
+        else {
             log(INFO, process_name, subprocess_name + " finished successfully");
         }
     }
-    else{
+    else {
         log(WARN, process_name, subprocess_name + " is not configured for execution");
     }
 
@@ -75,8 +75,6 @@ void end() {
 }
 
 int main(int argc, char** argv) {
-    bool error = false;
-
     init();
     if(!error)
         process();

@@ -2,7 +2,7 @@
 #include "../helpers/headers/globalvariables.h"
 #include "../helpers/headers/log.h"
 
-void subprocess2 () {
+void subprocess2() {
     std::string process_name = "Subprocess2";
     try {
         // Start
@@ -19,7 +19,7 @@ void subprocess2 () {
     }
 }
 
-void subprocess3 () {
+void subprocess3() {
     std::string process_name = "Subprocess3";
     try {
         // Start

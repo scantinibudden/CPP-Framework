@@ -6,7 +6,7 @@
 
 #define PROCESS_NAME "Process"
 
-void process () {
+void process() {
     try {
         std::string subprocess_name;
         // Start
@@ -15,50 +15,50 @@ void process () {
         // Sub process
         subprocess_name = "Subprocess Template";
         log(INFO, PROCESS_NAME, "Verifying if " + subprocess_name + " is configured to execute = " + config["execute_subprocess"]);
-        if(config["execute_subprocess"] == "YES"){
+        if(config["execute_subprocess"] == "YES") {
             log(INFO, PROCESS_NAME, subprocess_name + " is configured for execution");
             subprocess();
-            if(error){
+            if(error) {
                 log(ERROR, PROCESS_NAME, subprocess_name + " couldn't finish properly");
                 return;
             }
-            else{
+            else {
                 log(INFO, PROCESS_NAME, subprocess_name + " finished successfully");
             }
         }
-        else{
+        else {
             log(WARN, PROCESS_NAME, subprocess_name + " is not configured for execution");
         }
 
         // Sub process 2
         subprocess_name = "Subprocess Template 2";
         log(INFO, PROCESS_NAME, "Verifying if " + subprocess_name + " is configured to execute = " + config["execute_subprocess2"]);
-        if(config["execute_subprocess2"] == "YES"){
+        if(config["execute_subprocess2"] == "YES") {
             log(INFO, PROCESS_NAME, subprocess_name + " is configured for execution");
             subprocess2();
-            if(error){
+            if(error) {
                 log(ERROR, PROCESS_NAME, subprocess_name + " couldn't finish properly");
                 return;
             }
-            else{
+            else {
                 log(INFO, PROCESS_NAME, subprocess_name + " finished successfully");
             }
         }
-        else{
+        else {
             log(WARN, PROCESS_NAME, subprocess_name + " is not configured for execution");
         }
 
         // Sub process 3
         subprocess_name = "Subprocess Template 3";
         log(INFO, PROCESS_NAME, "Verifying if " + subprocess_name + " is configured to execute = " + config["execute_subprocess3"]);
-        if(config["execute_subprocess3"] == "YES"){
+        if(config["execute_subprocess3"] == "YES") {
             log(INFO, PROCESS_NAME, subprocess_name + " is configured for execution");
             subprocess3();
-            if(error){
+            if(error) {
                 log(ERROR, PROCESS_NAME, subprocess_name + " couldn't finish properly");
                 return;
             }
-            else{
+            else {
                 log(INFO, PROCESS_NAME, subprocess_name + " finished successfully");
             }
         }

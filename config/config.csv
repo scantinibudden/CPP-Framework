@@ -3,6 +3,7 @@ path_input,input
 path_output,output
 path_tmp,tmp
 path_std,std
+path_cfg,config
 --Process
 process_name,CPP-Framework
 --Processes

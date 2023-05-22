@@ -3,6 +3,6 @@
 
 #include <string>
 
-void readConfig (std::string config_file_path);
+void readConfig(std::string config_file_path);
 
 #endif

@@ -1,0 +1,2 @@
+temporary file folder, files are deleted on every run
+configurable using execute_cleanenvironment_init and execute_cleanenvironment_end to delete folder contents at the start and or end of the program execution

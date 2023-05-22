@@ -5,7 +5,7 @@
 
 #define PROCESS_NAME "Clean Environment"
 
-void cleanEnvironment (){
+void cleanEnvironment() {
     try {
         // Start
         log(INFO, PROCESS_NAME, "Starting process");

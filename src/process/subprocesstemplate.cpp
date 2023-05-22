@@ -4,7 +4,7 @@
 
 #define PROCESS_NAME "Subprocess Template"
 
-void subprocess () {
+void subprocess() {
     try {
         // Start
         log(INFO, PROCESS_NAME, "Starting process");

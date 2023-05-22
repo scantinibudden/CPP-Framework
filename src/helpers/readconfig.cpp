@@ -39,7 +39,7 @@ void readConfig (std::string config_file_path) {
             
             config_file >> csv_line;
             
-            if(csv_line[0] == '-'){
+            if(csv_line[0] == '-') {
                 // Invalid key or config title
                 continue;
             }
