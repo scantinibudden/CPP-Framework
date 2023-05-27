@@ -1,11 +1,11 @@
 #include "../framework/framework.h"
-#include "headers/process.h"
+#include "../framework/helpers/headers/process.h"
 #include "headers/subprocesstemplate.h"
 #include "headers/subprocesstemplate2.h"
 
 #define PROCESS_NAME "Process"
 
-void process() {
+void process(int argc, char** argv) {
     try {
         std::string subprocess_name;
         // Start

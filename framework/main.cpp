@@ -77,6 +77,6 @@ void end() {
 int main(int argc, char** argv) {
     init();
     if(!error)
-        process();
+        process(argc, argv);
     end();
 }

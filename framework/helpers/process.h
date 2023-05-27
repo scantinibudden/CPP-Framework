@@ -1,6 +1,6 @@
 #ifndef PROCESS_HH
 #define PROCESS_HH
 
-void process();
+void process(int argc, char** argv);
 
 #endif
