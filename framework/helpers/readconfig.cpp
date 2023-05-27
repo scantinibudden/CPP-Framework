@@ -32,7 +32,7 @@ void readConfig (std::string config_file_path) {
 
         // Extracting config data
         log(INFO, PROCESS_NAME, "Reading config file...");
-        while(!config_file.eof()){
+        while(!config_file.eof()) {
             std::string csv_line;
             std::string config_key;
             std::string config_value;

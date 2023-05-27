@@ -2,7 +2,7 @@
 #include "helpers/headers/log.h"
 #include "helpers/headers/cleanenvironment.h"
 #include "helpers/headers/globalvariables.h"
-#include "../src/headers/process.h"
+#include "helpers/headers/process.h"
 
 #define PATH_CONFIG "config/config.csv"
 #define PATH_LOGS "logs"
@@ -10,7 +10,7 @@
 bool error = false;
 
 void init() {
-    try{
+    try {
         std::string process_name = "Init";
         std::string subprocess_name;
 

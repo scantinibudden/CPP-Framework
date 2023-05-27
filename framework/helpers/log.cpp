@@ -19,21 +19,35 @@ void printHeader(){
 
 void log_init(std::string log_folder) {
     try{
-        // Get the current timestamp
-        std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
-        std::time_t timestamp = std::chrono::system_clock::to_time_t(now);
+        std::string log_path;
 
-        log_file.open(log_folder + "/log_" + std::ctime(&timestamp) + ".txt");
+        if(config["log_constantfile"] == "YES") {
+            log_path = log_folder + "/" + config["log_constantfile_name"];
+        }
+        else {
+            // Get the current timestamp
+            std::chrono::system_clock::time_point now = std::chrono::system_clock::now();
+            std::time_t timestamp = std::chrono::system_clock::to_time_t(now);
+
+            // Create path with timestamp
+            log_path = log_folder + "/log_" + std::ctime(&timestamp);
+        }
+
+        // Open file
+        log_file.open(log_path + ".txt");
         if(!log_file.is_open() || log_file.bad()) {
             error = true;
             return;
         }
 
+        // Print header
         printHeader();
 
+        // Print starter log
         log(INFO, PROCESS_NAME, "Start of log");
+        log(INFO, PROCESS_NAME, config["log_constantfile"]); 
     }
-    catch (...){
+    catch (...) {
         error = true;
     }
 }
@@ -55,7 +69,7 @@ void log(std::string log_type, std::string process_name, std::string message) {
 
 void log_end() {
     log(INFO, PROCESS_NAME, "End of log");
-    if(log_file.is_open()){
+    if(log_file.is_open()) {
         log_file.close();
     }
 }
