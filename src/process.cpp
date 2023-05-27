@@ -1,5 +1,4 @@
-#include "../helpers/headers/globalvariables.h"
-#include "../helpers/headers/log.h"
+#include "../framework/framework.h"
 #include "headers/process.h"
 #include "headers/subprocesstemplate.h"
 #include "headers/subprocesstemplate2.h"

@@ -2,7 +2,7 @@
 #include "helpers/headers/log.h"
 #include "helpers/headers/cleanenvironment.h"
 #include "helpers/headers/globalvariables.h"
-#include "process/headers/process.h"
+#include "../src/headers/process.h"
 
 #define PATH_CONFIG "config/config.csv"
 #define PATH_LOGS "logs"

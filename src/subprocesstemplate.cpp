@@ -1,6 +1,5 @@
+#include "../framework/framework.h"
 #include "headers/subprocesstemplate.h"
-#include "../helpers/headers/globalvariables.h"
-#include "../helpers/headers/log.h"
 
 #define PROCESS_NAME "Subprocess Template"
 

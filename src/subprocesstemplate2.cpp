@@ -1,6 +1,5 @@
+#include "../framework/framework.h"
 #include "headers/subprocesstemplate2.h"
-#include "../helpers/headers/globalvariables.h"
-#include "../helpers/headers/log.h"
 
 void subprocess2() {
     std::string process_name = "Subprocess2";
